@@ -15,6 +15,8 @@ jobs:
           base=https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release
           curl -fL -o geoip.dat   $base/geoip.dat
           curl -fL -o geosite.dat $base/geosite.dat
+      - name: Keep only categories used by the profile
+        run: node scripts/trim.js profiles/murka-smart-ru.json geoip.dat geosite.dat
       - name: Commit
         run: |
           git config user.name "github-actions"

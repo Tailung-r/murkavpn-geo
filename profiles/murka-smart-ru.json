@@ -2,7 +2,7 @@
   "Name": "Murka VPN Smart RU",
   "GlobalProxy": "true",
   "useChunkFiles": false,
-  "LastUpdated": "1795110031",
+  "LastUpdated": "1795110163",
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
     "geosite:private",
@@ -26,7 +26,7 @@
     "geoip:telegram"
   ],
   "BlockSites": [
-    "geosite:category-ads-all"
+    "geosite:category-ads"
   ],
   "BlockIp": [],
   "DomainStrategy": "IPIfNonMatch",
