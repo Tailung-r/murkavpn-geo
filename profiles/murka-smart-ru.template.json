@@ -1,0 +1,35 @@
+{
+  "Name": "Murka VPN Smart RU",
+  "GlobalProxy": "true",
+  "useChunkFiles": false,
+  "LastUpdated": "__TS__",
+  "RouteOrder": "block-proxy-direct",
+  "DirectSites": [
+    "geosite:private",
+    "geosite:category-ru",
+    "geosite:ru-available-only-inside"
+  ],
+  "DirectIp": [
+    "geoip:private",
+    "geoip:ru"
+  ],
+  "ProxySites": [
+    "geosite:ru-blocked",
+    "geosite:telegram",
+    "geosite:youtube",
+    "geosite:discord",
+    "geosite:github",
+    "geosite:google-play",
+    "geosite:category-ai-!cn"
+  ],
+  "ProxyIp": [
+    "geoip:telegram"
+  ],
+  "BlockSites": [
+    "geosite:category-ads-all"
+  ],
+  "BlockIp": [],
+  "DomainStrategy": "IPIfNonMatch",
+  "Geoipurl": "__BASE__/geoip.dat",
+  "Geositeurl": "__BASE__/geosite.dat"
+}

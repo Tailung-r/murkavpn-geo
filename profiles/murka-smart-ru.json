@@ -2,7 +2,7 @@
   "Name": "Murka VPN Smart RU",
   "GlobalProxy": "true",
   "useChunkFiles": false,
-  "LastUpdated": "__TS__",
+  "LastUpdated": "1795110031",
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
     "geosite:private",
@@ -30,6 +30,6 @@
   ],
   "BlockIp": [],
   "DomainStrategy": "IPIfNonMatch",
-  "Geoipurl": "__BASE__/geoip.dat",
-  "Geositeurl": "__BASE__/geosite.dat"
+  "Geoipurl": "https://raw.githubusercontent.com/Tailung-r/murkavpn-geo/main/geoip.dat",
+  "Geositeurl": "https://raw.githubusercontent.com/Tailung-r/murkavpn-geo/main/geosite.dat"
 }
