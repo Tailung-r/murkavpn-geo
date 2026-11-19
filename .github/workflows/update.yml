@@ -9,7 +9,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Download
         run: |
           base=https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release
