@@ -1,7 +1,7 @@
 # murkavpn-geo
 
-GeoIP и Geosite для маршрутизации Murka VPN (Happ / Xray).
+GeoIP и Geosite для маршрутизации Murka VPN (Happ / Incy).
 
-- `lite/geoip.dat`, `lite/geosite.dat` — каждые 6 часов скачиваются из открытой сборки [runetfreedom/russia-v2ray-rules-dat](https://github.com/runetfreedom/russia-v2ray-rules-dat) и обрезаются до категорий из профиля (`scripts/trim.js`).
-- `profiles/murka-smart-ru.json` — готовый профиль маршрутизации (Happ / Incy), шаблон в `murka-smart-ru.template.json`.
-- `make-header.ps1 -User Tailung-r` — собирает строку `happ://routing/onadd/...` для заголовка `routing`.
+- `geo/geoip.dat`, `geo/geosite.dat` — geo-файлы, обновляются каждые 6 часов.
+- `profiles/murka-smart-ru.json` — готовый профиль маршрутизации (ссылка для Incy autorouting), шаблон в `murka-smart-ru.template.json`.
+- `make-header.ps1 -User Tailung-r` — собирает профиль и строку `happ://routing/onadd/...` для заголовка `routing`.

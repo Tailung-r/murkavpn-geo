@@ -6,24 +6,31 @@
   "RouteOrder": "block-proxy-direct",
   "DirectSites": [
     "geosite:private",
-    "geosite:category-ru",
-    "geosite:ru-available-only-inside"
+    "geosite:ru-core",
+    "geosite:category-ru"
   ],
   "DirectIp": [
     "geoip:private",
     "geoip:ru"
   ],
   "ProxySites": [
-    "geosite:ru-blocked",
     "geosite:telegram",
-    "geosite:youtube",
-    "geosite:discord",
     "geosite:github",
+    "geosite:discord",
+    "geosite:whatsapp",
+    "geosite:banned-ru",
+    "geosite:hosting",
+    "geosite:youtube",
+    "geosite:ai",
+    "geosite:crypto",
+    "geosite:twitch",
+    "geosite:pinterest",
     "geosite:google-play",
-    "geosite:category-ai-!cn"
+    "geosite:category-geoblock-ru"
   ],
   "ProxyIp": [
-    "geoip:telegram"
+    "geoip:telegram",
+    "geoip:blocked-ru"
   ],
   "BlockSites": [
     "geosite:category-ads"

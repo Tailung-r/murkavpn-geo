@@ -5,7 +5,7 @@
 #   profiles\murka-smart-ru.json  - готовый профиль (ссылка для Incy autorouting)
 #   routing-header.txt            - строка для заголовка routing (Happ)
 param([string]$User = "")
-if ($User) { $base = "https://raw.githubusercontent.com/$User/murkavpn-geo/main/lite" }
+if ($User) { $base = "https://raw.githubusercontent.com/$User/murkavpn-geo/main/geo" }
 else       { $base = "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release" }
 $ts   = [DateTimeOffset]::UtcNow.ToUnixTimeSeconds()
 $json = (Get-Content "$PSScriptRoot\profiles\murka-smart-ru.template.json" -Raw -Encoding UTF8).Replace("__TS__", "$ts").Replace("__BASE__", $base)
